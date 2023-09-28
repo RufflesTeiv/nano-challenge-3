@@ -12,6 +12,9 @@
 		F066391E2AC5E92D002BB4E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F066391D2AC5E92D002BB4E6 /* Assets.xcassets */; };
 		F06639212AC5E92D002BB4E6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F06639202AC5E92D002BB4E6 /* Preview Assets.xcassets */; };
 		F066392C2AC5EE75002BB4E6 /* RouterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F066392B2AC5EE75002BB4E6 /* RouterController.swift */; };
+		F066392F2AC60051002BB4E6 /* NestedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F066392E2AC60051002BB4E6 /* NestedItem.swift */; };
+		F06639312AC6054F002BB4E6 /* ClothesProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06639302AC6054F002BB4E6 /* ClothesProperties.swift */; };
+		F06639332AC60B5B002BB4E6 /* ClothesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06639322AC60B5B002BB4E6 /* ClothesController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		F066391D2AC5E92D002BB4E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F06639202AC5E92D002BB4E6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F066392B2AC5EE75002BB4E6 /* RouterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterController.swift; sourceTree = "<group>"; };
+		F066392E2AC60051002BB4E6 /* NestedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedItem.swift; sourceTree = "<group>"; };
+		F06639302AC6054F002BB4E6 /* ClothesProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesProperties.swift; sourceTree = "<group>"; };
+		F06639322AC60B5B002BB4E6 /* ClothesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 				F06639272AC5EAA8002BB4E6 /* Controllers */,
 				F06639282AC5EABB002BB4E6 /* Data */,
 				F06639292AC5EACD002BB4E6 /* Models */,
+				F066392D2AC5FFF4002BB4E6 /* Utils */,
 				F066392A2AC5EADA002BB4E6 /* Views */,
 				F066391F2AC5E92D002BB4E6 /* Preview Content */,
 			);
@@ -76,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				F066392B2AC5EE75002BB4E6 /* RouterController.swift */,
+				F06639322AC60B5B002BB4E6 /* ClothesController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -90,6 +98,8 @@
 		F06639292AC5EACD002BB4E6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F066392E2AC60051002BB4E6 /* NestedItem.swift */,
+				F06639302AC6054F002BB4E6 /* ClothesProperties.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -100,6 +110,13 @@
 				F066391B2AC5E92D002BB4E6 /* ContentView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F066392D2AC5FFF4002BB4E6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +190,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F066391C2AC5E92D002BB4E6 /* ContentView.swift in Sources */,
+				F06639312AC6054F002BB4E6 /* ClothesProperties.swift in Sources */,
+				F06639332AC60B5B002BB4E6 /* ClothesController.swift in Sources */,
+				F066392F2AC60051002BB4E6 /* NestedItem.swift in Sources */,
 				F066391A2AC5E92D002BB4E6 /* NanoChallenge3App.swift in Sources */,
 				F066392C2AC5EE75002BB4E6 /* RouterController.swift in Sources */,
 			);
