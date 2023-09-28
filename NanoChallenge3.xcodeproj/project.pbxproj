@@ -52,8 +52,11 @@
 			isa = PBXGroup;
 			children = (
 				F06639192AC5E92D002BB4E6 /* NanoChallenge3App.swift */,
-				F066391B2AC5E92D002BB4E6 /* ContentView.swift */,
 				F066391D2AC5E92D002BB4E6 /* Assets.xcassets */,
+				F06639272AC5EAA8002BB4E6 /* Controllers */,
+				F06639282AC5EABB002BB4E6 /* Data */,
+				F06639292AC5EACD002BB4E6 /* Models */,
+				F066392A2AC5EADA002BB4E6 /* Views */,
 				F066391F2AC5E92D002BB4E6 /* Preview Content */,
 			);
 			path = NanoChallenge3;
@@ -65,6 +68,35 @@
 				F06639202AC5E92D002BB4E6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F06639272AC5EAA8002BB4E6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F06639282AC5EABB002BB4E6 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F06639292AC5EACD002BB4E6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F066392A2AC5EADA002BB4E6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F066391B2AC5E92D002BB4E6 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
