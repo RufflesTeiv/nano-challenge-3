@@ -7,7 +7,7 @@
 
 import Foundation
 
-class NestedItem<Properties>: Identifiable, Hashable {
+class NestedItem<Properties: Codable>: Identifiable, Hashable, Codable {
     static func == (lhs: NestedItem, rhs: NestedItem) -> Bool {
         lhs.id == rhs.id
     }
@@ -15,7 +15,7 @@ class NestedItem<Properties>: Identifiable, Hashable {
         hasher.combine(id)
     }
     
-    let id = UUID()
+    var id = UUID()
     var nestedItems: [NestedItem<Properties>] = []
     var properties: Properties
     

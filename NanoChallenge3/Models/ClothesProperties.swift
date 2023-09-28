@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ClothesProperties {
+struct ClothesProperties : Codable {
     var bikeAllowed : Bool = false
     var minTemperature : Int = -10
     var maxTemperature : Int = 40
