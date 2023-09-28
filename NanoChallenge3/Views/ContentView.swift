@@ -8,14 +8,30 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var routerController = RouterController.shared
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationStack(path: $routerController.viewStack) {
+            VStack {
+                // Essa tela geralmente
+                Text("Stack vazia (é pra funcionar assim mesmo)")
+                Button(action: {routerController.clear()}, label: {
+                    Text("Resetar viewStack")
+                })
+            }
+            .navigationDestination(for: String.self) { viewKey in
+                ZStack {
+                    switch viewKey {
+                    // Adicionar outros cases para outras telas
+                    default:
+                        // Fazer tela de erro para quando a tela solicitada
+                        // não existir
+                        Text("Erro!")
+                    }
+                }
+                .navigationBarBackButtonHidden(false)
+            }
         }
-        .padding()
     }
 }
 
